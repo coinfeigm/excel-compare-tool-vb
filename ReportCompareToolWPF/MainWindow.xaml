@@ -1,0 +1,642 @@
+﻿<controls:MetroWindow x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:ReportCompareToolWPF"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        mc:Ignorable="d"
+        Height="600" Width="940"
+        TitleCaps="False"
+        WindowStartupLocation="CenterScreen"
+        Closing="ReportComparisonTool_Closing" Icon="logo_transparent.ico">
+    <Window.Resources>
+    </Window.Resources>
+    <Window.TaskbarItemInfo >
+        <TaskbarItemInfo />
+    </Window.TaskbarItemInfo>
+
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button x:Name="btnSettings" Cursor="Hand">
+                <Button.ToolTip>
+                    <StackPanel>
+                        <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Change settings</TextBlock>
+                        <TextBlock TextWrapping="Wrap">Changes settings for comparison.</TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_settings}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <TextBlock Margin="5 0 0 0" VerticalAlignment="Center" TextDecorations="Underline" Text="Settings" />
+                </StackPanel>
+            </Button>
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+    
+    <Grid>
+        <Grid.Resources>
+            <!--  this is the template for the items (options too)  -->
+            <DataTemplate x:Key="MenuItemTemplate" DataType="{x:Type controls:HamburgerMenuIconItem}">
+                <Grid x:Name="RootGrid"
+                      Height="80"
+                      Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <ContentControl Grid.Column="0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Content="{Binding Icon}"
+                                    Focusable="False"
+                                    >
+                        <ContentControl.Resources>
+                            <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+                        </ContentControl.Resources>
+                    </ContentControl>
+                    <TextBlock Grid.Column="1"
+                               Margin="30"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               Text="{Binding Label}" />
+                </Grid>
+                <DataTemplate.Triggers>
+                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:HamburgerMenu}}, Path=IsPaneOpen}" Value="False">
+                        <Setter TargetName="RootGrid" Property="ToolTip" Value="{Binding ToolTip, Mode=OneWay}" />
+                    </DataTrigger>
+                </DataTemplate.Triggers>
+            </DataTemplate>
+
+        </Grid.Resources>
+
+        <controls:HamburgerMenu x:Name="HamburgerMenuControl"
+                                Foreground="White"
+                                PaneBackground="#23272A"
+                                IsPaneOpen="False"
+                                HamburgerWidth="70"
+                                CompactPaneLength ="70"
+                                ItemTemplate="{StaticResource MenuItemTemplate}"
+                                ItemClick="HamburgerMenuControl_OnItemClick"
+                                OptionsItemClick="HamburgerMenuControl_OnItemClick"
+                                DisplayMode="CompactInline"
+                                SelectedIndex="1">
+            <!--  Items  -->
+            <controls:HamburgerMenu.ItemsSource>
+                <controls:HamburgerMenuItemCollection>
+                    <controls:HamburgerMenuIconItem Icon="{StaticResource appbar_office_excel}" Label="Import">
+                        <controls:HamburgerMenuIconItem.ToolTip>
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Import Excel files</TextBlock>
+                                <TextBlock TextWrapping="Wrap">Browse and open Excel files to compare</TextBlock>
+                            </StackPanel>
+                        </controls:HamburgerMenuIconItem.ToolTip>
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <Grid Margin="10,10">
+                                <GroupBox x:Name="GrpBoxImport" Header="Import Excel Files">
+                                    <Grid Grid.IsSharedSizeScope="True">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="3*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="0.2*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,44,0,43">Excel File 1 </Label>
+                                        <TextBox x:Name="txtExcelFile_1" 
+                                                 Grid.Column="1"
+                                                 Height="{Binding ElementName=btnBrowse_1, Path=ActualHeight}"
+                                                 VerticalAlignment="Center"
+                                                 controls:TextBoxHelper.ClearTextButton="True">
+                                            <TextBox.ToolTip>
+                                                <StackPanel>
+                                                    <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Excel file path</TextBlock>
+                                                    <TextBlock TextWrapping="Wrap">Input Excel file path before conversion or customization</TextBlock>
+                                                </StackPanel>
+                                            </TextBox.ToolTip>
+                                        </TextBox>
+                                        <Button x:Name="btnBrowse_1" 
+                                                Grid.Column="2" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center"
+                                                Content="Browse" Margin="0,42"/>
+                                        <Label Grid.Column="0"
+                                               Grid.Row="1"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Top">Excel File 2 </Label>
+                                        <TextBox x:Name="txtExcelFile_2"
+                                                 Grid.Column="1"
+                                                 Grid.Row="1"
+                                                 Height="{Binding ElementName=btnBrowse_2, Path=ActualHeight}"
+                                                 VerticalAlignment="Top" 
+                                                 controls:TextBoxHelper.ClearTextButton="True">
+                                            <TextBox.ToolTip>
+                                                <StackPanel>
+                                                    <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Excel file path</TextBlock>
+                                                    <TextBlock TextWrapping="Wrap">Input Excel file path after conversion/customization</TextBlock>
+                                                </StackPanel>
+                                            </TextBox.ToolTip>
+                                        </TextBox>
+                                        <Button x:Name="btnBrowse_2" 
+                                                Grid.Column="2"
+                                                Grid.Row="1"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Top"
+                                                Content="Browse"/>
+
+                                        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                            <RadioButton Name="rbConvFlg" GroupName="Os" Cursor="Hand" Content="Conversion" IsChecked="True" Margin="10,0,10,0"/>
+                                            <RadioButton Name="rbCustFlg" GroupName="Os" Cursor="Hand" Content="Customization" />
+                                        </StackPanel>
+
+                                        <!-- A separator between settings and buttons. -->
+                                        <Line Grid.Column="0"
+                                              Grid.Row="2"
+                                              Grid.ColumnSpan="5"
+                                              Margin="0,4"
+                                              SnapsToDevicePixels="True"
+                                              Stroke="{Binding ElementName=GrpBoxImport, Path=BorderBrush}"
+                                              Stretch="Fill"
+                                              X1="0"
+                                              X2="1"/>
+
+                                        <Button x:Name="btnClear"
+                                                Grid.Column="1" 
+                                                Grid.Row="3" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Right" 
+                                                VerticalAlignment="Center"
+                                                Margin="0,14,5,14" Width="64">Clear</Button>
+                                        <Button x:Name="btnImport"
+                                                Grid.Column="2"
+                                                Grid.Row="3"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Width="64" Margin="0,14">Import</Button>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+
+                    <controls:HamburgerMenuIconItem Icon="{StaticResource appbar_draw_pixel_fill_grid}" Label="Compare">
+                        <controls:HamburgerMenuIconItem.ToolTip>
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Compare Excel files</TextBlock>
+                                <TextBlock TextWrapping="Wrap">Compare Excel files and look for differences</TextBlock>
+                            </StackPanel>
+                        </controls:HamburgerMenuIconItem.ToolTip>
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <Grid Margin="10,10">
+                                <GroupBox Name="grpBoxBeforeCompare" Header="Compare Excel Files" Visibility="Visible">
+                                    <Grid x:Name="grdMainCompare">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <GroupBox x:Name="cunt" Grid.Column="0" Header="Select sheets to compare" Margin="10">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <DockPanel Grid.Column="0" Grid.Row="0" LastChildFill="True" VerticalAlignment="Center">
+                                                    <Label>Excel File 1 </Label>
+                                                    <ComboBox x:Name="cmbSheet_1"></ComboBox>
+                                                </DockPanel>
+                                                <DockPanel Grid.Column="1" Grid.Row="0" LastChildFill="True" VerticalAlignment="Center">
+                                                    <Label>Excel File 2 </Label>
+                                                    <ComboBox x:Name="cmbSheet_2"></ComboBox>
+                                                </DockPanel>
+                                            </Grid>
+                                        </GroupBox>
+
+                                        <Grid x:Name="grpSpecChange" Grid.Row="1" Grid.ColumnSpan="3">
+                                            <controls:MetroAnimatedTabControl Margin="10">
+                                                <TabItem controls:ControlsHelper.HeaderFontSize="13" VerticalAlignment="Bottom">
+                                                    <TabItem.Header>
+                                                        LOCATION OF DATA
+                                                    </TabItem.Header>
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="140*"/>
+                                                            <ColumnDefinition Width="237*"/>
+                                                            <ColumnDefinition Width="377*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height=".25*"/>
+                                                            <RowDefinition Height=".25*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <RadioButton x:Name="rbDataLoc_Col"  Grid.Column="0" Cursor="Hand">By Column</RadioButton>
+                                                            <RadioButton x:Name="rbDataLoc_Row" Grid.Column="1" Cursor="Hand">By Row</RadioButton>
+                                                        </Grid>
+                                                        <Grid Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Margin="0,14,0,15">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Label Grid.Column="0" x:Name="lblFrom" HorizontalAlignment="Center">Remove</Label>
+                                                            <TextBox x:Name="txtDataLoc_Remove" Grid.Column="1">
+                                                                <TextBox.ToolTip>
+                                                                    <StackPanel>
+                                                                        <TextBlock TextWrapping="Wrap">Select data from Excel File 1.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Or Input data in the specified format.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Column => A,B,C</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Row => 1,2,3</TextBlock>
+                                                                    </StackPanel>
+                                                                </TextBox.ToolTip>
+                                                            </TextBox>
+                                                            <Label Grid.Column="2" HorizontalAlignment="Center">Add</Label>
+                                                            <TextBox x:Name="txtDataLoc_Add" Grid.Column="3">
+                                                                <TextBox.ToolTip>
+                                                                    <StackPanel>
+                                                                        <TextBlock TextWrapping="Wrap">Select data from Excel File 2.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Or Input data in the specified format.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Column => A,B,C</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Row => 1,2,3</TextBlock>
+                                                                    </StackPanel>
+                                                                </TextBox.ToolTip>
+                                                            </TextBox>
+                                                        </Grid>
+                                                        <Grid Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="0,13">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Button x:Name="btnDataLoc_Add" Grid.Column="0" Cursor="Hand" Margin="0,0,5,0">Set Changes</Button>
+                                                            <Button x:Name="btnDataLoc_SelectAll" Grid.Column="1" Cursor="Hand" Margin="0,0,5,0">Select All</Button>
+                                                            <Button x:Name="btnDataLoc_Remove"  Grid.Column="2" Cursor="Hand" Margin="0,0,0,0">Remove</Button>
+                                                        </Grid>
+                                                        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3">
+                                                            <ScrollViewer  VerticalScrollBarVisibility="Auto" Height="Auto">
+                                                                <DataGrid Name="dgvDataLoc"
+                                                                          Height="200px"
+                                                                          CanUserAddRows="False"
+                                                                          CanUserSortColumns="False"
+                                                                          SelectionMode="Extended"
+                                                                          ColumnWidth="*"
+                                                                          ScrollViewer.CanContentScroll="True"
+                                                                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                                          ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                                                                </DataGrid>
+                                                            </ScrollViewer >
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </TabItem>
+                                                <TabItem controls:ControlsHelper.HeaderFontSize="13" VerticalAlignment="Bottom">
+                                                    <TabItem.Header>
+                                                        CHANGE DATA
+                                                    </TabItem.Header>
+                                                    <Grid Margin="0 10">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height=".3*"/>
+                                                            <RowDefinition Height="*"/>
+                                                        </Grid.RowDefinitions>
+                                                        
+                                                        <Grid Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="2*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Label Grid.Column="0" HorizontalAlignment="Center">From</Label>
+                                                            <TextBox x:Name="txtData_From" Grid.Column="1">
+                                                                <TextBox.ToolTip>
+                                                                    <StackPanel>
+                                                                        <TextBlock TextWrapping="Wrap">Select data from Excel File 1.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Or Input data in the specified format.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Column => A,B,C</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Row => 1,2,3</TextBlock>
+                                                                    </StackPanel>
+                                                                </TextBox.ToolTip>
+                                                            </TextBox>
+                                                            <Label Grid.Column="2" HorizontalAlignment="Center">To</Label>
+                                                            <TextBox x:Name="txtData_To" Grid.Column="3">
+                                                                <TextBox.ToolTip>
+                                                                    <StackPanel>
+                                                                        <TextBlock TextWrapping="Wrap">Select data from Excel File 2.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Or Input data in the specified format.</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Column => A,B,C</TextBlock>
+                                                                        <TextBlock TextWrapping="Wrap">Eg. Row => 1,2,3</TextBlock>
+                                                                    </StackPanel>
+                                                                </TextBox.ToolTip>
+                                                            </TextBox>
+                                                        </Grid>
+                                                        <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="*"/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Button x:Name="btnData_Add" Grid.Column="0" Cursor="Hand" Margin="5,2,0,2">Set Changes</Button>
+                                                            <Button x:Name="btnData_SelectAll" Grid.Column="1" Cursor="Hand" Margin="5,2,0,2">Select All</Button>
+                                                            <Button x:Name="btnData_Remove" Grid.Column="2" Cursor="Hand" Margin="5,2,5,2">Remove</Button>
+                                                        </Grid>
+                                                        <StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                                                            <DataGrid Name="dgvData"
+                                                                      Height="200px"
+                                                                      Margin="0 10"
+                                                                      CanUserAddRows="False"
+                                                                      CanUserSortColumns="False"
+                                                                      ColumnWidth="*"
+                                                                      ScrollViewer.CanContentScroll="True"
+                                                                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                                                      ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                                                            </DataGrid>
+                                                        </StackPanel>
+                                                    </Grid>
+                                                </TabItem>
+                                            </controls:MetroAnimatedTabControl>
+
+                                        </Grid>
+                                        <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5">
+                                            <Button x:Name="btnCompare" Cursor="Hand" Width="78" Margin="5,0,0,0">Compare</Button>
+                                        </StackPanel>
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Name="grpBoxCompare" Header="Loading" Visibility="Hidden" Style="{StaticResource MyGroupBoxStyle}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid  Grid.Row="1" VerticalAlignment="Bottom">
+                                            <!--<ProgressBar x:Name="pbStatusMain" Minimum="0" Maximum="100" Value="0" IsIndeterminate="True"/>
+                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <Run x:Name="txtBlockStatusMain" Text=""/>
+                                            <Run Text="{Binding ElementName=pbStatusMain, Path=Value, StringFormat={}{0:0}%}" />
+                                        </TextBlock>-->
+                                        </Grid>
+                                        <Button x:Name="btnCancelCompare"
+                                                Grid.Row="2"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Top"
+                                                Content="Cancel"/>
+                                    </Grid>
+                                </GroupBox>
+                                <GroupBox Name="grpBoxAfterCompare" Header="Filter Results" Visibility="Hidden">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height=".5*"/>
+                                            <RowDefinition Height="1.5*"/>
+                                            <RowDefinition Height="3*"/>
+                                            <RowDefinition Height=".5*"/>
+                                            <RowDefinition Height=".5*"/>
+                                        </Grid.RowDefinitions>
+                                        <DockPanel VerticalAlignment="Center">
+                                            <Label>Page :</Label>
+                                            <ComboBox x:Name="cmbShowPage"></ComboBox>
+                                        </DockPanel>
+
+                                        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                                            <Button x:Name="btnFilter" Cursor="Hand" VerticalAlignment="Center" Width="76" Margin="2.5,0,5,0">Filter</Button>
+                                        </StackPanel>
+
+                                        <GroupBox Grid.Column="0" Grid.Row="1" Header="Value Error" Style="{StaticResource MyGroupBoxStyle}">
+                                            <Grid>
+                                                <ListBox x:Name="lstChkValueError">
+                                                    <ListBox.ItemTemplate>
+                                                        <HierarchicalDataTemplate>
+                                                            <CheckBox Content="{Binding Name}" IsChecked="{Binding IsChecked}"/>
+                                                        </HierarchicalDataTemplate>
+                                                    </ListBox.ItemTemplate>
+                                                </ListBox>
+                                            </Grid>
+                                        </GroupBox>
+
+                                        <GroupBox Grid.Column="1" Grid.Row="1" Header="Format Error" Style="{StaticResource MyGroupBoxStyle}">
+                                            <Grid>
+                                                <ListBox x:Name="lstChkFormatError">
+                                                    <ListBox.ItemTemplate>
+                                                        <HierarchicalDataTemplate>
+                                                            <CheckBox Content="{Binding Name}" IsChecked="{Binding IsChecked}"/>
+                                                        </HierarchicalDataTemplate>
+                                                    </ListBox.ItemTemplate>
+                                                </ListBox>
+                                            </Grid>
+                                        </GroupBox>
+                                        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Vertical">
+                                            <Label FontWeight="Black">Excel File 1 </Label>
+                                            <DataGrid Name="dgvExcel_1"
+                                                      Height="200px"
+                                                      CanUserAddRows="False" ColumnWidth="*"/>
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Vertical">
+                                            <Label FontWeight="Black">Excel File 2 </Label>
+                                            <DataGrid Name="dgvExcel_2"
+                                                      Height="200px"
+                                                      CanUserAddRows="False" ColumnWidth="*"/>
+                                        </StackPanel>
+                                        <Button x:Name="btnIgnore_1" 
+                                                Grid.Column="0" 
+                                                Grid.Row="3"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center"
+                                                Content="Ignore Error/s"/>
+                                        <Button x:Name="btnIgnore_2" 
+                                                Grid.Column="1" 
+                                                Grid.Row="3"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Content="Ignore Error/s"/>
+
+                                        <Button x:Name="btnGoto_Export" 
+                                                Grid.Column="1" 
+                                                Grid.Row="4"
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Center"
+                                                Margin="2.5,0,5,0"
+                                                Content="Proceed to Export"/>
+
+
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+
+                    <controls:HamburgerMenuIconItem Icon="{StaticResource appbar_page_excel}" Label="Export">
+                        <controls:HamburgerMenuIconItem.ToolTip>
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Export comparison result</TextBlock>
+                                <TextBlock TextWrapping="Wrap">Generate and save comparison results</TextBlock>
+                            </StackPanel>
+                        </controls:HamburgerMenuIconItem.ToolTip>
+                        <controls:HamburgerMenuIconItem.Tag>
+                            <Grid Margin="10,10">
+                                <GroupBox x:Name="GrpBoxExport" Header="Export Results">
+                                    <Grid Grid.IsSharedSizeScope="True">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="3*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="2*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <CheckBox x:Name="chkResult_1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,44,0,43">Comparison result for Excel File 1</CheckBox>
+                                        <TextBox x:Name="txtResult_1" 
+                                                 Grid.Column="1"
+                                                 Height="{Binding ElementName=btnBrowse_Result1, Path=ActualHeight}"
+                                                 VerticalAlignment="Center"
+                                                 controls:TextBoxHelper.ClearTextButton="True" Margin="0,42">
+                                            <TextBox.ToolTip>
+                                                <StackPanel>
+                                                    <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Excel file path</TextBlock>
+                                                    <TextBlock TextWrapping="Wrap">Save comparison result for Excel File 1</TextBlock>
+                                                </StackPanel>
+                                            </TextBox.ToolTip>
+                                        </TextBox>
+                                        <Button x:Name="btnBrowse_Result1" 
+                                                Grid.Column="2" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center"
+                                                Content="Browse" Margin="0,42"/>
+
+                                        <CheckBox x:Name="chkResult_2" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" >Comparison result for Excel File 2</CheckBox>
+                                        <TextBox x:Name="txtResult_2"
+                                                 Grid.Column="1"
+                                                 Grid.Row="1"
+                                                 Height="{Binding ElementName=btnBrowse_Result2, Path=ActualHeight}"
+                                                 VerticalAlignment="Center" 
+                                                 controls:TextBoxHelper.ClearTextButton="True">
+                                            <TextBox.ToolTip>
+                                                <StackPanel>
+                                                    <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Excel file path</TextBlock>
+                                                    <TextBlock TextWrapping="Wrap">Save comparison result for Excel File 2</TextBlock>
+                                                </StackPanel>
+                                            </TextBox.ToolTip>
+                                        </TextBox>
+                                        <Button x:Name="btnBrowse_Result2" 
+                                                Grid.Column="2"
+                                                Grid.Row="1" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Content="Browse"/>
+
+                                        <CheckBox x:Name="chkGenReport" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">Generate Comparison Result</CheckBox>
+                                        <TextBox x:Name="txtGenReport"
+                                                 Grid.Column="1"
+                                                 Grid.Row="2"
+                                                 Height="{Binding ElementName=btnBrowse_GenReport, Path=ActualHeight}"
+                                                 VerticalAlignment="Center" 
+                                                 controls:TextBoxHelper.ClearTextButton="True">
+                                            <TextBox.ToolTip>
+                                                <StackPanel>
+                                                    <TextBlock FontWeight="Bold" FontSize="14" Margin="0,0,0,5">Excel file path</TextBlock>
+                                                    <TextBlock TextWrapping="Wrap">Save generated report of the tool after comparison</TextBlock>
+                                                </StackPanel>
+                                            </TextBox.ToolTip>
+                                        </TextBox>
+                                        <Button x:Name="btnBrowse_GenReport" 
+                                                Grid.Column="2"
+                                                Grid.Row="2" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Content="Browse"/>
+
+                                        <!-- A separator between settings and buttons. -->
+                                        <Line Grid.Column="0"
+                                              Grid.Row="2"
+                                              Grid.ColumnSpan="5"
+                                              VerticalAlignment="Bottom"
+                                              Margin="0,4"
+                                              SnapsToDevicePixels="True"
+                                              Stroke="{Binding ElementName=GrpBoxImport, Path=BorderBrush}"
+                                              Stretch="Fill"
+                                              X1="0"
+                                              X2="1"/>
+
+                                        <Button x:Name="btnClear_Export"
+                                                Grid.Column="1" 
+                                                Grid.Row="3" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Right" 
+                                                VerticalAlignment="Center"
+                                                Margin="0,10,10,10" Width="64">Clear</Button>
+
+                                        <Button x:Name="btnExport"
+                                                Grid.Column="2" 
+                                                Grid.Row="3" 
+                                                Cursor="Hand"
+                                                HorizontalAlignment="Center" 
+                                                VerticalAlignment="Center"
+                                                Margin="0,10,0,10" Width="64">Export</Button>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </controls:HamburgerMenuIconItem.Tag>
+                    </controls:HamburgerMenuIconItem>
+                </controls:HamburgerMenuItemCollection>
+            </controls:HamburgerMenu.ItemsSource>
+
+            <!--  Content  -->
+            <controls:HamburgerMenu.ContentTemplate>
+                <DataTemplate DataType="{x:Type controls:HamburgerMenuItem}">
+                    <Grid x:Name="TheContentGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0"
+                            Background="White">
+                        </Border>
+                        <ContentControl x:Name="TheContent"
+                                        Grid.Row="1"
+                                        Focusable="False"
+                                        Foreground="{DynamicResource BlackBrush}"
+                                        Content="{Binding Tag}" />
+                    </Grid>
+                </DataTemplate>
+            </controls:HamburgerMenu.ContentTemplate>
+
+        </controls:HamburgerMenu>
+    </Grid>
+</controls:MetroWindow>

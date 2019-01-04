@@ -1,0 +1,393 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ReportCompareToolWPF
+</name>
+</assembly>
+<members>
+<member name="T:ReportCompareToolWPF.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ReportCompareToolWPF.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:ReportCompareToolWPF.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ReportCompareToolWPF.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ReportCompareToolWPF.IgnoreFormat">
+<summary>
+IgnoreFormat
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.IgnoreFormat.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ReportCompareToolWPF.ProgressBar">
+<summary>
+ProgressBar
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.ProgressBar.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ReportCompareToolWPF.Settings">
+<summary>
+Settings
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.Settings.Settings_OnLoad">
+ <summary>
+ Set values to controls of settings
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.Settings.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:ReportCompareToolWPF.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:ReportCompareToolWPF.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.ShowMenu(Utility.Structures.Menu)">
+ <summary>
+ Show selected menu
+ </summary>
+ <param name="p_enmMenu"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Initialize_Settings">
+ <summary>
+ Set settings to its initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Initialize_Import">
+ <summary>
+ Set import to its initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Import_OnLoad">
+ <summary>
+ Set values to controls of import
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Browse_Click(System.Object,System.EventArgs)">
+ <summary>
+ Browse for excel files
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.CloseExcel(Microsoft.Office.Interop.Excel.Application@,Microsoft.Office.Interop.Excel.Workbook@,Microsoft.Office.Interop.Excel.Worksheet@)">
+ <summary>
+ Close excel file
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.OpenExcel(Microsoft.Office.Interop.Excel.Application@,Microsoft.Office.Interop.Excel.Workbook@,System.Int32@,System.String,Utility.Structures.Position)">
+ <summary>
+ Open excel file and position to screen
+ </summary>
+ <param name="p_objExcel"></param>
+ <param name="p_objWorkbook"></param>
+ <param name="p_strPath"></param>
+ <param name="p_enmPos"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.ExcelProcessRunning">
+ <summary>
+ Check if excel instances are still running
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SheetBeforeRightClick(System.Object,Microsoft.Office.Interop.Excel.Range,System.Boolean@)">
+ <summary>
+ Disable right click function
+ </summary>
+ <param name="Sh"></param>
+ <param name="Target"></param>
+ <param name="Cancel"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.BeforeClose(System.Boolean@)">
+ <summary>
+ Restrict closing of imported excel file
+ </summary>
+ <param name="Cancel"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Initialize_Compare">
+ <summary>
+ Set compare to its initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.BringToFront(System.Windows.Controls.GroupBox)">
+ <summary>
+ Bring control to front in Compare menu
+ </summary>
+ <param name="p_objControl"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SetSheetsToComboBox(System.Windows.Controls.ComboBox@,Microsoft.Office.Interop.Excel.Application@)">
+ <summary>
+ Set sheets of excel files to combobox
+ </summary>
+ <param name="p_objComboBox"></param>
+ <param name="p_objExcel"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GetLocation(Microsoft.Office.Interop.Excel.Worksheet@,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location}@)">
+ <summary>
+ Get location of each data of selected worksheet
+ </summary>
+ <param name="p_objWorksheet"></param>
+ <param name="p_objLocation"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InitializeSpecChange">
+ <summary>
+ Set specification change to its initial value
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SpecChange_OnLoad">
+ <summary>
+ Set values to controls of specification change
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SheetSelectionChange_1(System.Object,Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Get selected cell in excel sheet 1
+ </summary>
+ <param name="Sh"></param>
+ <param name="Target"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SheetSelectionChange_2(System.Object,Microsoft.Office.Interop.Excel.Range)">
+ <summary>
+ Get selected cell in excel sheet 2
+ </summary>
+ <param name="Sh"></param>
+ <param name="Target"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GetSelectedColumns(System.String,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location})">
+ <summary>
+ Get columns selected on the worksheet
+ </summary>
+ <param name="p_strAddress"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GetSelectedRows(System.String,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location})">
+ <summary>
+ Get rows selected on the worksheet
+ </summary>
+ <param name="p_strAddress"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SetColSpecChangeToDataGridview(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int32}}@,System.String,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location},System.String,System.String,System.String)">
+ <summary>
+ Set added/removed column specification change to datagridview
+ </summary>
+ <param name="p_objCol"></param>
+ <param name="p_strCols"></param>
+ <param name="p_objLocation"></param>
+ <param name="p_strWorksheetName"></param>
+ <param name="p_strExcelFile"></param>
+ <param name="p_strMsg"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SetRowSpecChangeToDataGridview(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int32}}@,System.String,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location},System.String,System.String,System.String)">
+ <summary>
+ Set added/removed row specification change to datagridview
+ </summary>
+ <param name="p_objRow"></param>
+ <param name="p_strRows"></param>
+ <param name="p_objLocation"></param>
+ <param name="p_strWorksheetName"></param>
+ <param name="p_strExcelFile"></param>
+ <param name="p_strMsg"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.RemoveColSpecChange(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int32}}@,System.Int32,System.String)">
+ <summary>
+ Remove selected column specification change
+ </summary>
+ <param name="p_objCol"></param>
+ <param name="p_intPage"></param>
+ <param name="p_strCol"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.RemoveRowSpecChange(System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{System.Int32}}@,System.Int32,System.Int32)">
+ <summary>
+ Remove selected row specification change
+ </summary>
+ <param name="p_objRow"></param>
+ <param name="p_intPage"></param>
+ <param name="p_intRow"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InitializeIgnoreErrors">
+ <summary>
+ Set ignore to its initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.IgnoreErrors_OnLoad">
+ <summary>
+ Set controls of ignore errors to initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.SetPageToComboBox">
+ <summary>
+ Set pages to combobox
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.PopulateDataGridView(System.Windows.Controls.DataGrid@)">
+ <summary>
+ Set errors to datagridview
+ </summary>
+ <param name="p_objDataGridView"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.FilterDataGridview(System.Windows.Controls.DataGrid@,System.String[]@,System.String[]@,System.Int32)">
+ <summary>
+ Filter errors
+ </summary>
+ <param name="p_objDataGridView"></param>
+ <param name="p_blnValueFilter"></param>
+ <param name="p_blnFormatFilter"></param>
+ <param name="p_intPage"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GetCellRange(System.Windows.Controls.DataGrid@)">
+ <summary>
+ Get cell range if selected cell in the datagridview is a column or row
+ </summary>
+ <param name="p_objDataGridView"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.ClearDetection(System.Windows.Controls.DataGrid@,Microsoft.Office.Interop.Excel.Worksheet@)">
+ <summary>
+ Clear excel comments
+ </summary>
+ <param name="p_objDataGridView"></param>
+ <param name="p_objWorkSheet"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GetDifferences">
+ <summary>
+ Retrieve differences found
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.FindEquivalentCell(System.Int32,System.Tuple{System.Int32,System.Int32})">
+ <summary>
+ Find matching data of Excel File 2 from Excel File 1
+ </summary>
+ <param name="p_intPage"></param>
+ <param name="p_objRowCol"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InitializeExport">
+ <summary>
+ Set values of export to initial value
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.Export_OnLoad">
+ <summary>
+ Set controls of export to initial values
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.ValidFiles">
+ <summary>
+ Determine if files to be saved are valid
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.GenerateReport">
+ <summary>
+ Create comparison report
+ </summary>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InsertHeader(Microsoft.Office.Interop.Excel.Worksheet@,System.Int32@,System.Int32)">
+ <summary>
+ Create header for report per page
+ </summary>
+ <param name="p_objWorkSheet"></param>
+ <param name="p_intRow"></param>
+ <param name="p_intPage"></param>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InsertColsCompared(Microsoft.Office.Interop.Excel.Worksheet@,System.Int32,System.Int32)">
+ <summary>
+ Set columns compared
+ </summary>
+ <param name="p_objWorksheet"></param>
+ <param name="p_intRow"></param>
+ <param name="p_intPage"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InsertRowsCompared(Microsoft.Office.Interop.Excel.Worksheet@,System.Int32,System.Int32)">
+ <summary>
+ Set rows compared
+ </summary>
+ <param name="p_objWorksheet"></param>
+ <param name="p_intRow"></param>
+ <param name="p_intPage"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InsertDifferences(Microsoft.Office.Interop.Excel.Worksheet@,System.Int32,System.Int32)">
+ <summary>
+ Set differences found between excel files
+ </summary>
+ <param name="p_objWorksheet"></param>
+ <param name="p_intRow"></param>
+ <param name="p_intPage"></param>
+ <returns></returns>
+</member>
+<member name="M:ReportCompareToolWPF.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

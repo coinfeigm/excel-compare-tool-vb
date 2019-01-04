@@ -1,0 +1,267 @@
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CopyComplete
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojAssemblyReference.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Excel_Compare.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Utility.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Excel_Compare.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Excel_Compare.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Utility.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\Utility.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojAssemblyReference.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CopyComplete
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08032018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Excel_Compare.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Utility.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Excel_Compare.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Excel_Compare.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Utility.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\Utility.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08142018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.Cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.dll
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojAssemblyReference.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.baml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CoreCompileInputs.cache
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.CopyComplete
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\WPF_MVVM_PRISM\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.dll
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Excel_Compare.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\Utility.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\ControlzEx.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojResolveAssemblyReference.cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.baml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.Cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe.config
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.xml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe.config
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojResolveAssemblyReference.cache
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.pdb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.xml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.g.vb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.g.vb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.baml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.baml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.baml
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+Z:\50.Private Folder\P0141_Loriemae\ReportComparisonTool\08312018\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.Cache
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe.config
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbprojResolveAssemblyReference.cache
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Resources\Icons.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.g.vb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.g.vb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.g.vb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.g.vb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.g.vb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.cache
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF_MarkupCompile.lref
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Application.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\IgnoreFormat.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\MainWindow.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ProgressBar.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\Settings.baml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.g.resources
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.Resources.resources
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.vbproj.GenerateResource.Cache
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.xml
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.pdb
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.exe.manifest
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\Bin\ReportCompareToolWPF.application
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.exe.manifest
+C:\Users\developer\Documents\Visual Studio 2015\Projects\ReportCompareToolWPF - 08172018\ReportCompareToolWPF\obj\Debug\ReportCompareToolWPF.application

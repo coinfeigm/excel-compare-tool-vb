@@ -1,0 +1,11 @@
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\bin\x86\Release\Utility.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\bin\x86\Release\Utility.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\bin\x86\Release\Utility.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\obj\x86\Release\Utility.Resources.resources
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\obj\x86\Release\Utility.vbproj.GenerateResource.Cache
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\obj\x86\Release\Utility.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\obj\x86\Release\Utility.xml
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Utility\obj\x86\Release\Utility.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\Utility.dll
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\Utility.pdb
+C:\Users\developer\Desktop\NSAID\20180531_ReportComparisonTool\ReportCompareToolWPF - 08172018\Bin\Utility.xml

@@ -1,0 +1,381 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Excel_Compare
+</name>
+</assembly>
+<members>
+<member name="T:Excel_Compare.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Excel_Compare.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Excel_Compare.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Excel_Compare.Compare.SetThreshold">
+ <summary>
+ Set threshold in determining similarity of data
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareToBestMatchData">
+ <summary>
+ Set flag if to compare each column/row to column/row most similar to it 
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareMerge">
+ <summary>
+ Set flag if to compare excel sheets on merging
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareTextWrap">
+ <summary>
+ Set flag if to compare excel sheets on text wrap
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareTextAlign">
+ <summary>
+ Set flag if to compare excel sheets on text alignment
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareOrientation">
+ <summary>
+ Set flag if to compare excel sheets on orientation
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareBorder">
+ <summary>
+ Set flag if to compare excel sheets on border
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareBackColor">
+ <summary>
+ Set flag if to compare excel sheets on back color
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.CompareFont">
+ <summary>
+ Set flag if to compare excel sheets on font
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.NoOfPages">
+ <summary>
+ Sets number of pages compared
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.Page_Location_1">
+ <summary>
+ Sets the location of compared pages in excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.Page_Location_2">
+ <summary>
+ Sets the location of compared pages in excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.RemovedColumn">
+ <summary>
+ Set removed column from excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.RemovedRow">
+ <summary>
+ Set removed row from excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.AddedColumn">
+ <summary>
+ Set added column from excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.AddedRow">
+ <summary>
+ Set added row from excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.DataChange">
+ <summary>
+ Set changes in data after customization
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare.EquivalentColumns">
+ <summary>
+ Sets and returns equivalent columns of all pages from both excel sheets
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare.EquivalentRows">
+ <summary>
+ Sets and returns equivalent rows of all pages from both excel sheets
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare.ValueResult_1">
+ <summary>
+ Returns comparison result of all pages in excel sheet 1
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare.ValueResult_2">
+ <summary>
+ Return comparison result of all pages in excel sheet 2
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare.FormatResult">
+ <summary>
+ Returns comparison result by format of all pages based on equivalent columns and rows
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Excel_Compare.Compare.Compare(Microsoft.Office.Interop.Excel.Worksheet@,Microsoft.Office.Interop.Excel.Worksheet@,System.ComponentModel.BackgroundWorker@,System.ComponentModel.DoWorkEventArgs@)">
+ <summary>
+ Compare two excel sheets by page
+ Top-down,left-right comparison approach
+ </summary>
+ <param name="p_objWorkSheet_1">Excel File 1</param>
+ <param name="p_objWorkSheet_2">Excel File 2</param>
+</member>
+<member name="M:Excel_Compare.Compare.GetExcelData(Microsoft.Office.Interop.Excel.Worksheet@,System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.Dictionary{System.Tuple{System.Int32,System.Int32},Microsoft.Office.Interop.Excel.Range}}@,System.Collections.Generic.Dictionary{System.Int32,Utility.Structures.Location}@,System.Int32)">
+ <summary>
+ Get excel data of worksheet
+ </summary>
+ <param name="p_objWorksheet"></param>
+ <param name="p_objExcelData"></param>
+ <param name="p_objLocation"></param>
+ <param name="p_intPage"></param>
+</member>
+<member name="M:Excel_Compare.Compare.AddValueResultToWorkSheet(Microsoft.Office.Interop.Excel.Worksheet@,Microsoft.Office.Interop.Excel.Worksheet@,System.Int32)">
+ <summary>
+ Edit worksheet to set comparison result after compare by value
+ </summary>
+ <param name="p_objWorksheet_1"></param>
+ <param name="p_objWorksheet_2"></param>
+ <param name="p_intPage">Page to set comparison result</param>
+</member>
+<member name="M:Excel_Compare.Compare.AddFormatResultToWorkSheet(Microsoft.Office.Interop.Excel.Worksheet@,System.Int32)">
+ <summary>
+ Edit worksheet to set comparison result after compare by format
+ </summary>
+ <param name="p_objWorkSheet"></param>
+ <param name="p_intPage">Page to set comparison result</param>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetThreshold">
+ <summary>
+ Set threshold for comparison
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.CompareToBestMatchData">
+ <summary>
+ Set flag if to compare each column/row to column/row most similar to it
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetExcelData_1">
+ <summary>
+ Set excel data from excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetLocation_1">
+ <summary>
+ Set location of data in excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetExcelData_2">
+ <summary>
+ Set excel data from excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetLocation_2">
+ <summary>
+ Set location of data in excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetRemovedColumn">
+ <summary>
+ Set removed column from excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetRemovedRow">
+ <summary>
+ Set removed row from excel sheet 1
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetAddedColumn">
+ <summary>
+ Set added column from excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.SetAddedRow">
+ <summary>
+ Set added row from excel sheet 2
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Data.EquivalentColumns">
+ <summary>
+ Returns equivalent columns in excel data compared
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare_Data.EquivalentRows">
+ <summary>
+ Returns equivalent rows in excel data compared
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare_Data.ExcelData_Result_1">
+ <summary>
+ Returns result after comparison for excel data 1
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:Excel_Compare.Compare_Data.ExcelData_Result_2">
+ <summary>
+ Returns result after comparison for excel data 2
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Excel_Compare.Compare_Data.Compare">
+ <summary>
+ Compare excel data set
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.CreateDataDictionary">
+ <summary>
+ List of data present in both excel sheet
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.Set_DataChange">
+ <summary>
+ Get keys from data dictionary of data changes for customization
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.SetColumns">
+ <summary>
+ Get rows of columns to compare
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetEquivalent_Columns">
+ <summary>
+ Get equivalent columns of both excel data
+ Using Jaccard similarity index 
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetColumns">
+ <summary>
+ Get all columns
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetEquivalent_Rows">
+ <summary>
+ Get equivalent rows of both excel data
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetRows">
+ <summary>
+ Get rows
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.CalcSimilarity(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32})">
+ <summary>
+ Calculate similarity of columns using Jaccard similarity index
+ </summary>
+ <param name="p_objSet_1"></param>
+ <param name="p_objSet_2"></param>
+ <returns></returns>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetDistanceMatrix(System.Int32,System.Int32)">
+ <summary>
+ Get distance matrix
+ Using Levenshtein Distance Algorithm
+ </summary>
+ <param name="p_intCol1_Idx">Column index of excel data 1</param>
+ <param name="p_intCol2_Idx">Column index of excel data 2</param>
+ <returns></returns>
+</member>
+<member name="M:Excel_Compare.Compare_Data.GetMinDist_Direction(System.Int16,System.Int16,System.Int16,System.Int16)">
+ <summary>
+ Get minimum distance and direction
+ </summary>
+ <param name="p_intUpVal">Value of index above the current index in the matrix</param>
+ <param name="p_intLeftVal">Value of index on the left side of the current index in the matrix</param>
+ <param name="p_intDiagVal">Value of index on the upper left side of the current index in the matrix</param>
+ <param name="p_intCost">Equivalent cost of the current index</param>
+ <returns></returns>
+</member>
+<member name="M:Excel_Compare.Compare_Data.InitializeResult">
+ <summary>
+ Initialize comparison results to -1[No Error]
+ </summary>
+</member>
+<member name="M:Excel_Compare.Compare_Data.SetError_Column(Utility.Structures.ValueError)">
+ <summary>
+ Set error to columns
+ </summary>
+ <param name="p_objError">Value to set in case of error</param>
+</member>
+<member name="M:Excel_Compare.Compare_Data.SetError_Row(Utility.Structures.ValueError)">
+ <summary>
+ Set error to rows of equivalent columns
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareMerge">
+ <summary>
+ Set flag if to compare excel sheets on merging
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareTextWrap">
+ <summary>
+ Set flag if to compare excel sheets on text wrap
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareTextAlign">
+ <summary>
+ Set flag if to compare excel sheets on text alignment
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareOrientation">
+ <summary>
+ Set flag if to compare excel sheets on orientation
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareBorder">
+ <summary>
+ Set flag if to compare excel sheets on border
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareBackColor">
+ <summary>
+ Set flag if to compare excel sheets on back color
+ True: Yes; False: No
+ </summary>
+</member>
+<member name="P:Excel_Compare.Compare_Format.CompareFont">
+ <summary>
+ Set flag if to compare excel sheets on font
+ True: Yes; False: No
+ </summary>
+</member>
+</members>
+</doc>

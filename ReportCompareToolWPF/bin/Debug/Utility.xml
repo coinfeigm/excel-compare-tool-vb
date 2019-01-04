@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Utility
+</name>
+</assembly>
+<members>
+<member name="T:Utility.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Utility.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Utility.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Utility.Utility.IsValidInteger(System.String,System.Int32,System.Int32)">
+ <summary>
+ Determine if number is a valid integer
+ Optional: Validate if number is within the specified range
+ </summary>
+ <param name="p_strInt">String to validate</param>
+ <param name="p_intMin">Minimum valid integer</param>
+ <param name="p_intMax">Maximum valid integer</param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.IsValidPath(System.String)">
+ <summary>
+ Determine if path is valid
+ </summary>
+ <param name="p_strPath"></param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.IsValidDirectory(System.String)">
+ <summary>
+ Determine if directory is valid
+ </summary>
+ <param name="p_strDirectory"></param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.IsValidFileName(System.String)">
+ <summary>
+ Determine if filename is valid
+ </summary>
+ <param name="p_strPath"></param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.IsAlpha(System.String)">
+ <summary>
+ Determine if input only contains letters
+ </summary>
+ <param name="p_String"></param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.ConvColNameToColNum(System.String)">
+ <summary>
+ Return column number of given column name in excel
+ </summary>
+ <param name="p_strColName"></param>
+ <returns></returns>
+</member>
+<member name="M:Utility.Utility.ConvColNumToColName(System.Int32)">
+ <summary>
+ Return column name of given column number in excel
+ </summary>
+ <param name="p_ColNum"></param>
+ <returns></returns>
+</member>
+</members>
+</doc>

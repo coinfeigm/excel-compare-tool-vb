@@ -1,0 +1,42 @@
+﻿<Window x:Class="IgnoreFormat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReportCompareToolWPF"
+        mc:Ignorable="d"
+        Title="IgnoreFormat" Height="450" Width="800" Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Header="Value Errors" Margin="2 2 0 0">
+                <ListBox x:Name="lstChkValErr">
+                    <ListBox.ItemTemplate>
+                        <HierarchicalDataTemplate>
+                            <CheckBox Cursor="Hand" Content="{Binding Name}" IsChecked="{Binding IsChecked}"/>
+                        </HierarchicalDataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+            <GroupBox Grid.Column="1" Header="Format Errors" Margin="2 2 2 0 ">
+                <ListBox x:Name="lstChkFormatErr">
+                    <ListBox.ItemTemplate>
+                        <HierarchicalDataTemplate>
+                            <CheckBox Cursor="Hand" Content="{Binding Name}" IsChecked="{Binding IsChecked}"/>
+                        </HierarchicalDataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </GroupBox>
+        </Grid>
+        <Button x:Name="btnIgnoreFormat" Grid.Column="0" Grid.Row="2" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center">Ignore</Button>
+    </Grid>
+
+</Window>
